@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssertLib", "AssertLib\AssertLib.csproj", "{7BB69175-DE45-4683-9D17-EC613BCB4EB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{B9E2A1DC-0BC6-4A37-B306-9446528ED769}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7BB69175-DE45-4683-9D17-EC613BCB4EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BB69175-DE45-4683-9D17-EC613BCB4EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BB69175-DE45-4683-9D17-EC613BCB4EB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9E2A1DC-0BC6-4A37-B306-9446528ED769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E2A1DC-0BC6-4A37-B306-9446528ED769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E2A1DC-0BC6-4A37-B306-9446528ED769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E2A1DC-0BC6-4A37-B306-9446528ED769}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
