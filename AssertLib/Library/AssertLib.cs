@@ -62,13 +62,13 @@ namespace AssertLib
         }
 
   
-        public static bool RaiseError(this AssertObject parent)
+        public static bool RaiseError(this AssertObject obj)
         {
-            if (parent.ObjectToAssert is Delegate)
+            if (obj.ObjectToAssert is Delegate)
             {
                 try
                 {
-                    (parent.ObjectToAssert as Delegate).Method.Invoke((parent.ObjectToAssert as Delegate).Target, null);
+                    (obj.ObjectToAssert as Delegate).Method.Invoke((obj.ObjectToAssert as Delegate).Target, null);
                 }
                 catch (Exception)
                 {
@@ -79,10 +79,10 @@ namespace AssertLib
             throw new ExpectationFailedExceptin("Expected exception");
         }
 
-        public static AssertObject Properties(this AssertObject parent)
+        public static AssertObject Properties(this AssertObject obj)
         {
-            parent.Properties = true;
-            return parent;
+            obj.Properties = true;
+            return obj;
         }
 
         //Could be much better - was trying with dynamic but don't have enough time to do that now
