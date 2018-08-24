@@ -9,18 +9,24 @@ namespace AssertLib
 {
     public class AssertObject
     {
-        public Object ObjectToAssert { get;  private set; }
+        public Object Subject { get; set; }
         public bool ExpectedResult { get; set; }
-        public List<string> PropertiesToExclude { get; set; } = new List<string>();
-        public bool Properties { get; set; }
+        public string PropertyToExclude { get; set; }
+        public bool CheckProperties { get; set; }
 
         public AssertObject(Object obj)
         {
-            Properties = false;
+            CheckProperties = false;
             ExpectedResult = true;
-            ObjectToAssert = obj;
+            Subject = obj;
         }
 
- 
+        public void ExcludeProperty(string property)
+        {
+            PropertyToExclude = property;
+            CheckProperties = true;
+        }
+
+
     }
 }

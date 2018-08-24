@@ -8,8 +8,8 @@ namespace AssertLib.Library.Comparers.Interfaces
 {
     public interface IComplexTypeComparer : IComparer
     {
-        bool CompareEqual(AssertObject parent, object compareTo);
-        bool CompareEqualProperties(AssertObject parent, object compareTo);
+        bool CompareEqual(object subject, object compareTo);
+        bool CompareEqualProperties(object subject, object compareTo, string propertyToExclude);
 
     }
 }

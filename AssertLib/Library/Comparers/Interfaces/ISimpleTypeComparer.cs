@@ -8,8 +8,10 @@ namespace AssertLib.Library.Comparers.Interfaces
 {
     public interface ISimpleTypeComparer : IComparer
     {
-        bool CompareEqual(AssertObject parent, object compareTo);
-        bool CompareGreater(object parent, object compareTo);
+        bool CompareEqual(object parent, object compareTo);
+        bool CompareGreater<T, D>(T parent, D compareTo)
+         where T : IComparable
+         where D : IComparable;
 
     }
 }

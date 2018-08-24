@@ -45,14 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Library\ActionFactory\ActionFactory.cs" />
     <Compile Include="Library\AssertLib.cs" />
     <Compile Include="Library\Comparers\ComplexTypeComparer.cs" />
     <Compile Include="Library\Comparers\Interfaces\IComparer.cs" />
     <Compile Include="Library\Comparers\Interfaces\IComplexTypeComparer.cs" />
     <Compile Include="Library\Comparers\Interfaces\ISimpleTypeComparer.cs" />
     <Compile Include="Library\Comparers\SimpleTypeComparer.cs" />
+    <Compile Include="Library\Helpers\LambdaHelper.cs" />
     <Compile Include="Model\AssertObject.cs" />
-    <Compile Include="ExpectationFailedExceptin.cs" />
+    <Compile Include="Exceptions\ExpectationFailedExceptin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
